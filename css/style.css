@@ -27,10 +27,10 @@ nav > ul {
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
-    align-items: center;
+    justify-content: left;
+    justify-items: left;
+    align-content: left;
+    align-items: left;
 }
 
 /*nav > ul > li {
