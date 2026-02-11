@@ -1,6 +1,10 @@
 body{
     background-color: rgb(215, 211, 211);
     text-align:center;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
 }
 
 h1, h2, h3 {
@@ -50,8 +54,4 @@ div > img {
     height:auto;
     
 }
-.container {
-    text-align: center;
-    width: 600px;
-    height:auto;
-}
+
