@@ -3,7 +3,7 @@ body, header,h1,h2,h3 {
 }
 
 h1, h2, h3 {
-    color: #000000;
+    color: #cdc5c5;
     text-align: center;
     text-decoration: underline;
     font-family: sans-serif;
@@ -34,7 +34,7 @@ nav > ul {
    /* background-color: black;*/
 
 nav > ul > li > a {
-    color: rgb(0, 0, 0);
+    color: rgb(243, 238, 238);
     font-size: 20px;
     font-family: sans-serif;
     text-decoration: none;
