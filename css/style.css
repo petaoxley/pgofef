@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 body{
     background-color: rgb(215, 211, 211);
     text-align:center;
@@ -11,7 +13,10 @@ h1, h2, h3 {
     color: rgb(52, 51, 51);
     text-align: center;
     text-decoration: none;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight:100;
+    font-style: italic;
+
 }
 
 header > p {
@@ -54,4 +59,29 @@ div > img {
     height:auto;
     
 }
+/* .grid{
+    display:grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+}
+*/ 
+.grid3{
+    height: 400px;
+    display:grid;
+    grid-template-rows: 200px;
+    grid-template-columns: 200px 200px 200px;
+    gap: 20px;
+    justify-content: start;
 
+}
+.grid4{
+    display:grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px
+}
+.grid4 img{
+    width: 100%;
+    
+}
