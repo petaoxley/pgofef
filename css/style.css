@@ -19,12 +19,13 @@ h1, h2, h3 {
     text-decoration: none;
 }
 
-p {
+p, ol {
    font-family: 'Roboto', sans-serif;
    font-size: small;
    font-weight: 200;
    font-style: normal;
 }
+
 header > p {
     text-align: center;
     font-family: sans-serif;
