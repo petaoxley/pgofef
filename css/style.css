@@ -27,8 +27,8 @@ h2 {
     color: rgb(52, 51, 51);
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size:medium;
-    font-weight: 300;
+    font-size:large;
+    font-weight: 500;
     font-style:normal;
     text-decoration: none;
 
@@ -38,12 +38,12 @@ h3 {
     color: rgb(52, 51, 51);
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    font-size:medium;
-    font-weight: 300;
+    font-size:large;
+    font-weight: 500;
     font-style:italic;
     text-decoration: none;
 }
-p, ol {
+p, ol, li {
    font-family: 'Roboto', sans-serif;
    font-size: small;
    font-weight: 200;
