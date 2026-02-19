@@ -21,6 +21,7 @@ h1, h2, h3 {
 
 p {
    font-family: 'Roboto', sans-serif;
+   font-size: small;
    font-weight: 200;
    font-style: normal;
 }
