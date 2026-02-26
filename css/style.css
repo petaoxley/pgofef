@@ -60,7 +60,7 @@ header > p {
 .grid3 {
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 100px 300px;
     column-gap: 40px;
 }
 
