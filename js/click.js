@@ -17,3 +17,8 @@ redClickBox.addEventListener("mouseover", function () {
 redClickBox.addEventListener("mouseout", function () {
     redClickBox.style.backgroundColor = "red"
 }
+let showButton = document.getElementById ("show")
+
+showButton.addEventListener ("click", function (){
+    showHideBox.style.visibility = visible
+}
