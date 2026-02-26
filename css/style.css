@@ -57,6 +57,7 @@ header > p {
     text-align: left;
     font-family: sans-serif;
 }
+
 .grid3 {
     display: grid;
     grid-template-rows: 1fr;
@@ -107,15 +108,6 @@ div > img {
     gap:20px;
 }
 */ 
-.grid3{
-    height: 400px;
-    display:grid;
-    grid-template-rows: 200px;
-    grid-template-columns: 200px 200px 200px;
-    gap: 20px;
-    justify-content: start;
-
-}
 .grid4{
     display:grid;
     grid-template-rows: auto auto;
