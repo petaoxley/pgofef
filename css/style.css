@@ -57,6 +57,12 @@ header > p {
     text-align: left;
     font-family: sans-serif;
 }
+.grid3 {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 40px;
+}
 
 nav > ul > li {
     width: 600px;
