@@ -1,4 +1,4 @@
-/* ---------------- RESET ---------------- */
+\/* ---------------- RESET ---------------- */
 * {
     margin: 0;
     padding: 0;
@@ -25,7 +25,7 @@ h1 {
     letter-spacing: 5px;
 }
 
-/* ---------------- TOP GRID (IMAGE + NAV) ---------------- */
+/* ---------------- TOP GRID (FIRST GRID) ---------------- */
 
 .grid4:first-of-type {
     display: grid;
@@ -35,12 +35,12 @@ h1 {
     align-items: center;
 }
 
-/* Larger first image */
+/* Larger first image (no rounded corners) */
 .grid4:first-of-type img {
     width: 100%;
     max-width: 700px;
-    border-radius: 16px;
     box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+    border-radius: 0;
 }
 
 /* ---------------- NAVIGATION ---------------- */
@@ -54,13 +54,20 @@ nav li {
 }
 
 nav a {
-    text-decoration: none;   /* remove underline */
-    color: #2e2e2e;          /* set link color */
+    text-decoration: none;
+    color: #2e2e2e;
     font-size: 18px;
     letter-spacing: 1px;
+    padding: 6px 10px;
+    border-radius: 4px;
 }
 
-/* ---------------- SECTION SPACING ---------------- */
+/* Light grey highlight ONLY for nav */
+nav a:hover {
+    background-color: #e6e6e6;
+}
+
+/* ---------------- GENERAL SECTION SPACING ---------------- */
 
 section {
     padding: 80px 100px;
@@ -105,7 +112,7 @@ ol li {
     margin-bottom: 18px;
 }
 
-/* ---------------- GALLERY GRID ---------------- */
+/* ---------------- GALLERY GRID (SECOND GRID) ---------------- */
 
 main .grid4 {
     display: grid;
@@ -117,14 +124,14 @@ main .grid4 {
 main .grid4 .item {
     background: white;
     padding: 30px;
-    border-radius: 18px;
     text-align: center;
 }
 
+/* Gallery images (no rounded corners, no hover) */
 main .grid4 img {
     width: 100%;
-    border-radius: 14px;
     box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border-radius: 0;
 }
 
 main .grid4 p {
@@ -141,18 +148,4 @@ footer {
     font-size: 14px;
     letter-spacing: 2px;
     color: #777;
-}
-
-nav a {
-    text-decoration: none;
-    color: #2e2e2e;
-    font-size: 18px;
-    letter-spacing: 1px;
-    padding: 6px 10px;        /* adds space for highlight */
-    border-radius: 4px;       /* soft edges */
-}
-
-/* Simple light grey highlight */
-nav a:hover {
-    background-color: #e6e6e6;
 }
