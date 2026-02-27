@@ -9,144 +9,147 @@ body {
     background-color: #f4f4f4;
     font-family: 'Roboto', sans-serif;
     color: #2e2e2e;
-    line-height: 1.8;
+    line-height: 2;              /* More space between lines */
     letter-spacing: 0.5px;
 }
 
 /* ---------------- HEADER ---------------- */
 
 header {
-    padding: 60px 80px 20px 80px;
+    padding: 70px 100px 30px 100px;
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 52px;
     font-weight: 900;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
 }
 
-/* ---------------- TOP GRID (Image + Nav) ---------------- */
+/* ---------------- TOP GRID (IMAGE + NAV) ---------------- */
 
 .grid4:first-of-type {
     display: grid;
-    grid-template-columns: 1.2fr 1fr;
-    gap: 80px;
-    padding: 40px 80px;
+    grid-template-columns: 1.5fr 1fr;  /* Make first image area larger */
+    gap: 100px;
+    padding: 60px 100px;
     align-items: center;
+}
+
+/* Make first image bigger */
+.grid4:first-of-type img {
+    width: 100%;
+    max-width: 700px;   /* controls size */
+    border-radius: 16px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
 }
 
 /* ---------------- NAVIGATION ---------------- */
 
 nav ul {
-    list-style: none;
+    list-style: none;  /* keep unordered list */
 }
 
 nav li {
-    margin-bottom: 18px;
+    margin-bottom: 22px;  /* more vertical spacing */
 }
 
 nav a {
-    text-decoration: none;     /* remove underline */
-    color: #2e2e2e;            /* set link color */
+    text-decoration: none;
+    color: #2e2e2e;
     font-size: 18px;
     letter-spacing: 1px;
-    transition: all 0.3s ease; /* new CSS property */
+    transition: all 0.3s ease;
 }
 
 nav a:hover {
-    color: #000;
+    color: black;
     letter-spacing: 2px;
 }
 
-/* ---------------- GENERAL SECTION SPACING ---------------- */
+/* ---------------- SECTION SPACING ---------------- */
 
 section {
-    padding: 60px 80px;
+    padding: 80px 100px;  /* More space around sections */
 }
 
 h2 {
-    font-size: 26px;
-    font-weight: 700;
-    margin-bottom: 20px;
+    font-size: 28px;
+    margin-bottom: 30px;   /* More space below headings */
     letter-spacing: 2px;
 }
 
 h3 {
-    font-size: 20px;
-    margin: 60px 80px 20px 80px;
+    font-size: 22px;
+    margin: 80px 100px 30px 100px;
     letter-spacing: 2px;
 }
 
 p {
-    margin-bottom: 12px;
-    font-size: 15px;
+    margin-bottom: 20px;   /* More space between paragraphs */
+    font-size: 16px;
 }
 
-/* ---------------- IMAGE STYLING ---------------- */
+/* ---------------- UNORDERED LIST (VALUES) ---------------- */
 
-.item img {
-    width: 100%;
-    height: auto;
-    border-radius: 14px;
-    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
-    transition: transform 0.4s ease;
+ul {
+    margin-top: 20px;
+    padding-left: 25px;
 }
 
-.item img:hover {
-    transform: translateY(-6px);
+ul li {
+    margin-bottom: 18px;   /* More spacing between bullet points */
 }
 
-.item p {
-    text-align: center;
-    margin-top: 12px;
-    font-size: 14px;
-    color: #666;
-    letter-spacing: 1px;
+/* ---------------- ORDERED LIST (HOW IT'S MADE) ---------------- */
+
+ol {
+    margin-top: 25px;
+    padding-left: 30px;
 }
 
-/* ---------------- GALLERY GRID (SECOND GRID) ---------------- */
+ol li {
+    margin-bottom: 18px;   /* More spacing between numbers */
+}
+
+/* ---------------- GALLERY GRID ---------------- */
 
 main .grid4 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-    padding: 40px 80px 80px 80px;
+    gap: 50px;
+    padding: 60px 100px 100px 100px;
 }
 
 main .grid4 .item {
     background: white;
-    padding: 25px;
-    border-radius: 16px;
+    padding: 30px;
+    border-radius: 18px;
     text-align: center;
-    transition: box-shadow 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 main .grid4 .item:hover {
-    box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+    transform: translateY(-8px);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
 }
 
 main .grid4 img {
     width: 100%;
-    border-radius: 12px;
+    border-radius: 14px;
 }
 
-/* ---------------- ORDERED LIST ---------------- */
-
-ol {
+main .grid4 p {
     margin-top: 15px;
-    padding-left: 20px;
-}
-
-ol li {
-    margin-bottom: 10px;
+    color: #666;
+    letter-spacing: 1px;
 }
 
 /* ---------------- FOOTER ---------------- */
 
 footer {
     text-align: center;
-    padding: 60px 0;
-    font-size: 13px;
+    padding: 70px 0;
+    font-size: 14px;
     letter-spacing: 2px;
     color: #777;
 }
