@@ -142,11 +142,6 @@ div > img {
 }
 
 /* Optional: center text under images */
-.grid4 p,
-.grid4 figcaption {
-    text-align: center;
-    margin-top: 8px;
-}
 
 /* Make it responsive for smaller screens */
 @media (max-width: 1024px) {
