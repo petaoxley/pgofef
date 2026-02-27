@@ -1,4 +1,4 @@
-/* RESET */
+/* ---------------- RESET ---------------- */
 * {
     margin: 0;
     padding: 0;
@@ -6,28 +6,28 @@
 }
 
 body {
-    background-color: #f2f2f2;
+    background-color: #f4f4f4;
     font-family: 'Roboto', sans-serif;
-    color: #333;
-    line-height: 1.8;                 /* better readability */
-    letter-spacing: 0.5px;            /* subtle premium spacing */
+    color: #2e2e2e;
+    line-height: 1.8;
+    letter-spacing: 0.5px;
 }
 
 /* ---------------- HEADER ---------------- */
 
-.site-header {
-    padding: 60px 80px 30px 80px;
+header {
+    padding: 60px 80px 20px 80px;
 }
 
 h1 {
     font-size: 48px;
     font-weight: 900;
-    letter-spacing: 4px;              /* bold brand spacing */
+    letter-spacing: 4px;
 }
 
-/* ---------------- GRID 1 (TOP SECTION) ---------------- */
+/* ---------------- TOP GRID (Image + Nav) ---------------- */
 
-.top-grid {
+.grid4:first-of-type {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     gap: 80px;
@@ -37,55 +37,32 @@ h1 {
 
 /* ---------------- NAVIGATION ---------------- */
 
-.main-nav ul {
+nav ul {
     list-style: none;
 }
 
-.main-nav li {
+nav li {
     margin-bottom: 18px;
 }
 
-.main-nav a {
-    text-decoration: none;
-    color: #333;
+nav a {
+    text-decoration: none;     /* remove underline */
+    color: #2e2e2e;            /* set link color */
     font-size: 18px;
-    font-weight: 400;
     letter-spacing: 1px;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease; /* new CSS property */
 }
 
-.main-nav a:hover {
+nav a:hover {
     color: #000;
-    letter-spacing: 2px;   /* subtle movement */
+    letter-spacing: 2px;
 }
 
-/* ---------------- IMAGE STYLING ---------------- */
+/* ---------------- GENERAL SECTION SPACING ---------------- */
 
-.item img,
-.card img {
-    width: 100%;
-    height: auto;
-    border-radius: 14px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-    transition: transform 0.4s ease;
+section {
+    padding: 60px 80px;
 }
-
-/* subtle hover lift effect */
-.item img:hover,
-.card img:hover {
-    transform: translateY(-6px);
-}
-
-.item p,
-.card p {
-    text-align: center;
-    margin-top: 12px;
-    font-size: 14px;
-    color: #666;
-    letter-spacing: 1px;
-}
-
-/* ---------------- SECTION HEADINGS ---------------- */
 
 h2 {
     font-size: 26px;
@@ -100,21 +77,43 @@ h3 {
     letter-spacing: 2px;
 }
 
-/* Content sections spacing */
-section {
-    padding: 40px 80px;
+p {
+    margin-bottom: 12px;
+    font-size: 15px;
 }
 
-/* ---------------- GRID 2 (GALLERY) ---------------- */
+/* ---------------- IMAGE STYLING ---------------- */
 
-.gallery-grid {
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+    transition: transform 0.4s ease;
+}
+
+.item img:hover {
+    transform: translateY(-6px);
+}
+
+.item p {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #666;
+    letter-spacing: 1px;
+}
+
+/* ---------------- GALLERY GRID (SECOND GRID) ---------------- */
+
+main .grid4 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
+    padding: 40px 80px 80px 80px;
 }
 
-/* Card styling */
-.card {
+main .grid4 .item {
     background: white;
     padding: 25px;
     border-radius: 16px;
@@ -122,15 +121,31 @@ section {
     transition: box-shadow 0.3s ease;
 }
 
-.card:hover {
-    box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+main .grid4 .item:hover {
+    box-shadow: 0 18px 40px rgba(0,0,0,0.12);
+}
+
+main .grid4 img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+/* ---------------- ORDERED LIST ---------------- */
+
+ol {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+ol li {
+    margin-bottom: 10px;
 }
 
 /* ---------------- FOOTER ---------------- */
 
 footer {
-    padding: 60px 0;
     text-align: center;
+    padding: 60px 0;
     font-size: 13px;
     letter-spacing: 2px;
     color: #777;
