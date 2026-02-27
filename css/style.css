@@ -9,7 +9,7 @@ body {
     background-color: #f4f4f4;
     font-family: 'Roboto', sans-serif;
     color: #2e2e2e;
-    line-height: 2;              /* More space between lines */
+    line-height: 2;
     letter-spacing: 0.5px;
 }
 
@@ -29,16 +29,16 @@ h1 {
 
 .grid4:first-of-type {
     display: grid;
-    grid-template-columns: 1.5fr 1fr;  /* Make first image area larger */
+    grid-template-columns: 1.5fr 1fr;
     gap: 100px;
     padding: 60px 100px;
     align-items: center;
 }
 
-/* Make first image bigger */
+/* Larger first image */
 .grid4:first-of-type img {
     width: 100%;
-    max-width: 700px;   /* controls size */
+    max-width: 700px;
     border-radius: 16px;
     box-shadow: 0 15px 40px rgba(0,0,0,0.12);
 }
@@ -46,35 +46,29 @@ h1 {
 /* ---------------- NAVIGATION ---------------- */
 
 nav ul {
-    list-style: none;  /* keep unordered list */
+    list-style: none;
 }
 
 nav li {
-    margin-bottom: 22px;  /* more vertical spacing */
+    margin-bottom: 22px;
 }
 
 nav a {
-    text-decoration: none;
-    color: #2e2e2e;
+    text-decoration: none;   /* remove underline */
+    color: #2e2e2e;          /* set link color */
     font-size: 18px;
     letter-spacing: 1px;
-    transition: all 0.3s ease;
-}
-
-nav a:hover {
-    color: black;
-    letter-spacing: 2px;
 }
 
 /* ---------------- SECTION SPACING ---------------- */
 
 section {
-    padding: 80px 100px;  /* More space around sections */
+    padding: 80px 100px;
 }
 
 h2 {
     font-size: 28px;
-    margin-bottom: 30px;   /* More space below headings */
+    margin-bottom: 30px;
     letter-spacing: 2px;
 }
 
@@ -85,11 +79,11 @@ h3 {
 }
 
 p {
-    margin-bottom: 20px;   /* More space between paragraphs */
+    margin-bottom: 20px;
     font-size: 16px;
 }
 
-/* ---------------- UNORDERED LIST (VALUES) ---------------- */
+/* ---------------- UNORDERED LIST ---------------- */
 
 ul {
     margin-top: 20px;
@@ -97,10 +91,10 @@ ul {
 }
 
 ul li {
-    margin-bottom: 18px;   /* More spacing between bullet points */
+    margin-bottom: 18px;
 }
 
-/* ---------------- ORDERED LIST (HOW IT'S MADE) ---------------- */
+/* ---------------- ORDERED LIST ---------------- */
 
 ol {
     margin-top: 25px;
@@ -108,7 +102,7 @@ ol {
 }
 
 ol li {
-    margin-bottom: 18px;   /* More spacing between numbers */
+    margin-bottom: 18px;
 }
 
 /* ---------------- GALLERY GRID ---------------- */
@@ -125,17 +119,12 @@ main .grid4 .item {
     padding: 30px;
     border-radius: 18px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-main .grid4 .item:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 50px rgba(0,0,0,0.15);
 }
 
 main .grid4 img {
     width: 100%;
     border-radius: 14px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
 main .grid4 p {
@@ -152,4 +141,18 @@ footer {
     font-size: 14px;
     letter-spacing: 2px;
     color: #777;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2e2e2e;
+    font-size: 18px;
+    letter-spacing: 1px;
+    padding: 6px 10px;        /* adds space for highlight */
+    border-radius: 4px;       /* soft edges */
+}
+
+/* Simple light grey highlight */
+nav a:hover {
+    background-color: #e6e6e6;
 }
