@@ -95,7 +95,7 @@ nav > ul > li > a:hover {
 }
 
 div > img {
-    width: 600px;
+    width: 200px;
     height: auto;
     justify-content: start;
 
@@ -115,6 +115,48 @@ div > img {
     gap: 20px
 }
 .grid4 img{
-    width: 100%;
+    width: 50%;
     
+}
+
+/* Reset some default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Grid container */
+.grid4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 20px; /* space between images */
+    padding: 20px;
+}
+
+/* Make images responsive inside grid */
+.grid4 img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Optional: center text under images */
+.grid4 p,
+.grid4 figcaption {
+    text-align: center;
+    margin-top: 8px;
+}
+
+/* Make it responsive for smaller screens */
+@media (max-width: 1024px) {
+    .grid4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid4 {
+        grid-template-columns: 1fr;
+    }
 }
