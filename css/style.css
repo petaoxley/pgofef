@@ -13,7 +13,7 @@ body {
     letter-spacing: 0.5px;
 }
 
-/* ---------------- HEADER ---------------- */
+
 
 header {
     padding: 70px 100px 30px 100px;
@@ -25,7 +25,6 @@ h1 {
     letter-spacing: 5px;
 }
 
-/* ---------------- TOP GRID (FIRST GRID) ---------------- */
 
 .grid4:first-of-type {
     display: grid;
@@ -35,13 +34,13 @@ h1 {
     align-items: center;
 }
 
-/* Larger first image (no rounded corners) */
+
 .grid4:first-of-type img {
     width: 100%;
     max-width: 700px;
 }
 
-/* ---------------- NAVIGATION ---------------- */
+
 
 nav ul {
     list-style: none;
@@ -59,12 +58,12 @@ nav a {
     padding: 6px 10px;
 }
 
-/* Light grey highlight ONLY for nav */
+
 nav a:hover {
     background-color: #e6e6e6;
 }
 
-/* ---------------- GENERAL SECTION SPACING ---------------- */
+
 
 section {
     padding: 80px 100px;
@@ -87,7 +86,7 @@ p {
     font-size: 16px;
 }
 
-/* ---------------- UNORDERED LIST ---------------- */
+
 
 ul {
     margin-top: 20px;
@@ -98,7 +97,7 @@ ul li {
     margin-bottom: 18px;
 }
 
-/* ---------------- ORDERED LIST ---------------- */
+
 
 ol {
     margin-top: 25px;
@@ -109,7 +108,7 @@ ol li {
     margin-bottom: 18px;
 }
 
-/* ---------------- GALLERY GRID (SECOND GRID) ---------------- */
+
 
 main .grid4 {
     display: grid;
@@ -135,7 +134,6 @@ main .grid4 p {
     letter-spacing: 1px;
 }
 
-/* ---------------- FOOTER ---------------- */
 
 footer {
     text-align: center;
