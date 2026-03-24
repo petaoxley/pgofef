@@ -122,7 +122,6 @@ main .grid4 .item {
     text-align: center;
 }
 
-/* Gallery images (no rounded corners, no hover) */
 main .grid4 img {
     width: 100%;
 }

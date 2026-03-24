@@ -1,5 +1,4 @@
 @import "style.css";
-/* MOBILE STYLES (max-width: 480px) */
 
 body {
     padding: 0 12px;
@@ -17,21 +16,18 @@ h1 {
     letter-spacing: 2px;
 }
 
-/* Top Section (Hero Image + Nav stacked) */
 .grid4:first-of-type {
     display: block;
-    padding: 20px 0 30px 0; /* extra bottom space */
+    padding: 20px 0 30px 0;
 }
 
-/* FIRST IMAGE — give it more room */
 .grid4:first-of-type img {
     width: 100%;
     max-width: 100%;
     display: block;
-    margin: 0 auto 30px auto; /* more space below */
+    margin: 0 auto 30px auto;
 }
 
-/* Navigation */
 nav li {
     margin-bottom: 10px;
 }
@@ -42,7 +38,6 @@ nav a {
     padding: 6px 0;
 }
 
-/* Main Sections */
 section {
     padding: 30px 0;
 }
@@ -64,7 +59,6 @@ p {
     margin-bottom: 12px;
 }
 
-/* Lists */
 ul,
 ol {
     padding-left: 18px;
@@ -76,7 +70,7 @@ ol li {
     margin-bottom: 10px;
 }
 
-/* Gallery Section (Stacked & Fully Visible) */
+
 main .grid4 {
     display: block; /* remove grid */
     padding: 20px 0 40px 0;
@@ -84,16 +78,15 @@ main .grid4 {
 
 main .grid4 .item {
     margin-bottom: 30px;
-    padding: 0; /* remove extra padding so images get full width */
+    padding: 0;
 }
 
 main .grid4 img {
     width: 100%;
-    height: auto; /* ensures full image shows */
+    height: auto;
     display: block;
 }
 
-/* Footer */
 footer {
     padding: 25px 0;
     font-size: 12px;
