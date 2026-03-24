@@ -3,18 +3,17 @@ let berry = document.getElementById("berry");
 let blue = document.getElementById("blue");
 let green = document.getElementById("green");
 
-document.getElementById("green").addEventListener("click", function() {
-  alert("You clicked the green can!");
-}, false);
+berry.addEventListener("click", function () {
+    document.body.style.backgroundColor = "lightpink";
+});
 
-document.getElementById("berry").addEventListener("click", function() {
-  alert("You clicked the berry can!");
-}, false);
+blue.addEventListener("click", function () {
+    document.body.style.backgroundColor = "lightblue";
+});
 
-document.getElementById("blue").addEventListener("click", function() {
-  alert("You clicked the blue can!");
-}, true);
-
+green.addEventListener("click", function () {
+    document.body.style.backgroundColor = "lightgreen";
+});
 
 // click.js
 "use strict";
