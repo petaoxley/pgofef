@@ -15,32 +15,39 @@ green.addEventListener("click", function () {
     document.body.style.backgroundColor = "lightgreen";
 });
 
+
+
 // click.js
 "use strict";
 
-let redClickBox = document.getElementById("redClick");
-
-redClickBox.classList.add("clickBox");
-
-redClickBox.addEventListener("click", function () {
-    document.querySelector("body").style.backgroundColor = "blueviolet";
-    redClickBox.style.backgroundColor = "orange";
-});
-
-redClickBox.addEventListener("mouseover", function () {
-    redClickBox.style.backgroundColor = "rgba(0,128,0,0.75)";
-});
-
-redClickBox.addEventListener("mouseout", function () {
-    redClickBox.style.backgroundColor = "red";
-});
-
+let pinkClickBox = document.getElementById("pinkClick");
 let showButton = document.getElementById("show");
 let showHideBox = document.getElementById("boxToShow");
 
-showButton.addEventListener("click", function () {
-    showHideBox.style.visibility = "visible";
+// add base style class
+pinkClickBox.classList.add("clickBox");
+
+// click event
+pinkClickBox.addEventListener("click", function () {
+    document.body.classList.add("purpleBackground");
+    pinkClickBox.classList.add("clickedBox");
 });
+
+// hover events
+pinkClickBox.addEventListener("mouseover", function () {
+    pinkClickBox.classList.add("hoverBox");
+});
+
+pinkClickBox.addEventListener("mouseout", function () {
+    pinkClickBox.classList.remove("hoverBox");
+});
+
+// show button
+showButton.addEventListener("click", function () {
+    showHideBox.classList.add("visibleBox");
+});
+
+
 
 // debug
 "use strict";
@@ -52,63 +59,6 @@ alert(message);
 document.querySelector("#heading").innerText = message;
 document.getElementById("heading").innerText = message;
 
-// image gallery
-"use strict";
-
-let galleryClass = document.querySelectorAll("imageGallery");
-
-for (let i = 0; i < galleryClass.length; i++) {
-    galleryClass[i].style.display = "none";
-}
-
-let currentImage = 0;
-galleryClass[currentImage].style.display = "block";
-
-let nextButton = document.getElementById("next");
-let prevButton = document.getElementById("previous");
-let startButton = document.getElementById("start");
-
-let autoCycleActive = false;
-let cycleInterval;
-
-nextButton.addEventListener("click", function () {
-    galleryClass[currentImage].style.display = "none";
-    currentImage++;
-
-    if (currentImage == galleryClass.length) {
-        currentImage = 0;
-    }
-
-    galleryClass[currentImage].style.display = "block";
-});
-
-prevButton.addEventListener("click", function () {
-    galleryClass[currentImage].style.display = "none";
-    currentImage--;
-
-    if (currentImage == -1) {
-        currentImage = galleryClass.length - 1;
-    }
-
-    galleryClass[currentImage].style.display = "block";
-});
-
-startButton.addEventListener("click", function () {
-    if (autoCycleActive == false) {
-        autoCycleActive = true;
-
-        cycleInterval = setInterval(function () {
-            galleryClass[currentImage].style.display = "none";
-            currentImage++;
-
-            if (currentImage == galleryClass.length) {
-                currentImage = 0;
-            }
-
-            galleryClass[currentImage].style.display = "block";
-        }, 3000);
-    }
-});
 
 // looping objects
 "use strict";
