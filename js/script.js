@@ -26,7 +26,6 @@ let showHideBox = document.getElementById("boxToShow");
 
 // add base style class
 // If you used querySelectorAll:
-const pinkClickBox = document.querySelector(".pink-box")
 pinkClickBox.classList.add("clickBox");
 
 
