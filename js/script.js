@@ -55,7 +55,7 @@ document.getElementById("heading").innerText = message;
 // image gallery
 "use strict";
 
-let galleryClass = document.querySelectorAll(".imageGallery");
+let galleryClass = document.querySelectorAll("imageGallery");
 
 for (let i = 0; i < galleryClass.length; i++) {
     galleryClass[i].style.display = "none";
@@ -137,37 +137,6 @@ layout.forEach (element => {
     output.append(newDiv);
 })
 
-// tabs
-"use strict";
-
-let tabContent = document.querySelectorAll(".tabcontent");
-console.log(tabContent.length);
-
-for (let i = 0; i < tabContent.length; i++) {
-    tabContent[i].style.display = "none";
-}
-
-tabContent.forEach(tab => {
-    tab.style.display = "none";
-});
-
-// let london = document.getElementById("London");
-
-// london.addEventListener("click", function(){
-//     console.log(london.innerHTML);
-// });
-
-let tablinks = document.querySelectorAll(".tablinks");
-tablinks.forEach(button => {
-    button.addEventListener("click", function () {
-        //console.log(button.innerHTML);
-        tabContent.forEach(tab => {
-            tab.style.display = "none";
-        });
-        let currentButton = button.innerHTML;
-        document.getElementById(currentButton).style.display = "block";
-    });
-});
 
 //change header 2 size
 let style = document.createElement("style");
