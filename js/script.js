@@ -54,7 +54,7 @@ let style = document.createElement("style");
 style.innerHTML = `
 .bigText {
     font-size: 40px;
-    color: blue;
+    color: black;
 }
 `;
 document.head.appendChild(style);
