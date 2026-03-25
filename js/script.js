@@ -25,7 +25,11 @@ let showButton = document.getElementById("show");
 let showHideBox = document.getElementById("boxToShow");
 
 // add base style class
+// If you used querySelectorAll:
+console.log("Looking for element:", pinkClickBox);
 pinkClickBox.classList.add("clickBox");
+
+
 
 // click event
 pinkClickBox.addEventListener("click", function () {
