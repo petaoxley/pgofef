@@ -18,34 +18,28 @@ green.addEventListener("click", function () {
 
 
 // click.js
+
 "use strict";
 
 let pinkClickBox = document.getElementById("pinkClick");
 let showButton = document.getElementById("show");
 let showHideBox = document.getElementById("boxToShow");
 
-// add base style class
-// If you used querySelectorAll:
 pinkClickBox.classList.add("clickBox");
 
-
-
-// click event
 pinkClickBox.addEventListener("click", function () {
     document.body.classList.add("purpleBackground");
-    pinkClickBox.classList.add("clickedBox");
+    this.classList.add("clickedBox");
 });
 
-// hover events
 pinkClickBox.addEventListener("mouseover", function () {
-    pinkClickBox.classList.add("hoverBox");
+    this.classList.add("hoverBox");
 });
 
 pinkClickBox.addEventListener("mouseout", function () {
-    pinkClickBox.classList.remove("hoverBox");
+    this.classList.remove("hoverBox");
 });
 
-// show button
 showButton.addEventListener("click", function () {
     showHideBox.classList.add("visibleBox");
 });
