@@ -170,6 +170,16 @@ tablinks.forEach(button => {
 });
 
 //change header 2 size
-let heading = document.querySelector("h2");
+let style = document.createElement("style");
 
-heading.style.fontSize = "40px";
+style.innerHTML = `
+.bigText {
+    font-size: 40px;
+    color: blue;
+}
+`;
+
+document.head.appendChild(style);
+
+let heading = document.querySelector("h2");
+heading.classList.add("bigText");
