@@ -73,3 +73,6 @@ document.querySelectorAll("h2").forEach(h =>
 document.querySelector("h1").addEventListener("click", function () {
     this.style.color = "hotpink";
 });
+document.querySelector("h1").addEventListener("click", function () {
+    alert("It works!");
+});
