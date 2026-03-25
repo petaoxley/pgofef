@@ -169,13 +169,7 @@ tablinks.forEach(button => {
     });
 });
 
+//change header 2 size
+let heading = document.querySelector("h2");
 
-let myElement = document.getElementById("h2");
-
-myElement.addEventListener("mouseover", function () {
-    myElement.style.backgroundColor = "lightblue";
-});
-
-myElement.addEventListener("mouseout", function () {
-    myElement.style.backgroundColor = "lightgrey";
-});
+heading.style.fontSize = "40px";
