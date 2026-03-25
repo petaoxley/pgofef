@@ -74,5 +74,5 @@ document.querySelector("h1").addEventListener("click", function () {
     this.style.color = "hotpink";
 });
 document.querySelector("h1").addEventListener("click", function () {
-    alert("It works!");
+    alert("It's 3pm Somewhere!");
 });
