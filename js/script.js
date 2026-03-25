@@ -170,7 +170,7 @@ tablinks.forEach(button => {
 });
 
 
-let myElement = document.getElementById("yourElementID");
+let myElement = document.getElementById("h2");
 
 myElement.addEventListener("mouseover", function () {
     myElement.style.backgroundColor = "lightblue";
