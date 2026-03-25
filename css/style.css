@@ -140,3 +140,67 @@ footer {
     letter-spacing: 2px;
     color: #777;
 }
+
+.showHideContainer {
+display: none;
+width: 140px;
+height: 140px;
+margin-top: 15px;
+border: 2px solid #999;
+}
+
+.visibleBox {
+display: block;
+}
+
+.berryBox {
+background-color: lightpink;
+}
+
+.blueBox {
+background-color: lightblue;
+}
+
+.greenBox {
+background-color: lightgreen;
+}
+
+.purpleBackground {
+background-color: lavender !important;
+}
+
+.clickedBox {
+background-color: #f3d9ff;
+border-radius: 4px;
+}
+
+.hoverBox {
+background-color: #e6e6e6;
+}
+
+.bigText {
+font-size: 40px;
+color: black;
+}
+
+.hero-grid {
+display: grid;
+grid-template-columns: 1.5fr 1fr;
+gap: 100px;
+padding: 60px 100px;
+align-items: center;
+}
+
+.hero-grid img {
+width: 100%;
+max-width: 700px;
+}
+
+.colour-heading {
+padding-bottom: 20px;
+}
+
+.colour-section {
+padding-top: 20px;
+padding-bottom: 20px;
+}
