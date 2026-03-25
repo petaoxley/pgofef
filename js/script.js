@@ -168,3 +168,14 @@ tablinks.forEach(button => {
         document.getElementById(currentButton).style.display = "block";
     });
 });
+
+
+let myElement = document.getElementById("yourElementID");
+
+myElement.addEventListener("mouseover", function () {
+    myElement.style.backgroundColor = "lightblue";
+});
+
+myElement.addEventListener("mouseout", function () {
+    myElement.style.backgroundColor = "lightgrey";
+});
