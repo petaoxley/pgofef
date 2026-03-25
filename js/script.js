@@ -69,3 +69,7 @@ console.log(message);
 document.querySelectorAll("h2").forEach(h =>
     h.classList.add("bigText")
 );
+
+document.querySelector("h1").addEventListener("click", function () {
+    this.style.color = "hotpink";
+});
