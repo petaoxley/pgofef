@@ -19,7 +19,7 @@ document.querySelectorAll(".green").forEach(el =>
     )
 );
 
-/* Click boxes */
+/* Click boxes / nav links */
 document.querySelectorAll(".pinkClick").forEach(box => {
 
     box.addEventListener("click", function () {
@@ -41,7 +41,23 @@ document.querySelectorAll(".pinkClick").forEach(box => {
 document.querySelectorAll(".show").forEach((btn, index) => {
     btn.addEventListener("click", function () {
         document.querySelectorAll(".showHideBox")[index]
-        .classList.toggle("visibleBox");
+            .classList.add("visibleBox");
+    });
+});
+
+/* Hide buttons */
+document.querySelectorAll(".hide").forEach((btn, index) => {
+    btn.addEventListener("click", function () {
+        document.querySelectorAll(".showHideBox")[index]
+            .classList.remove("visibleBox");
+    });
+});
+
+/* Toggle buttons */
+document.querySelectorAll(".toggle").forEach((btn, index) => {
+    btn.addEventListener("click", function () {
+        document.querySelectorAll(".showHideBox")[index]
+            .classList.toggle("visibleBox");
     });
 });
 
@@ -50,15 +66,6 @@ let message = "It's 3pm Somewhere!";
 console.log(message);
 
 /* Change H2 size */
-let style = document.createElement("style");
-style.innerHTML = `
-.bigText {
-    font-size: 40px;
-    color: black;
-}
-`;
-document.head.appendChild(style);
-
-document.querySelectorAll("h2").forEach(h => 
+document.querySelectorAll("h2").forEach(h =>
     h.classList.add("bigText")
 );
