@@ -14,7 +14,7 @@ let button = document.getElementById("colorToggle");
 button.addEventListener("click", function () {
     document.body.style.backgroundColor =
         document.body.style.backgroundColor === "black"
-            ? "#050505"
+            ? "#aeff00"
             : "black";
 });
 
