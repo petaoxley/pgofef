@@ -28,3 +28,13 @@ cards.forEach(card => {
         this.style.boxShadow = "0 0 20px rgb(0, 200, 255)";
     });
 });
+
+// DJ LINEUP CLICK REVEAL
+let djs = document.querySelectorAll(".dj");
+
+djs.forEach(dj => {
+    dj.addEventListener("click", function () {
+        let info = this.querySelector(".dj-info");
+        info.classList.toggle("hidden");
+    });
+});
