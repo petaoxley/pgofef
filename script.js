@@ -11,12 +11,14 @@ cards.forEach(card => {
 // 2. BACKGROUND COLOR TOGGLE
 let button = document.getElementById("colorToggle");
 
+let colors = ["black", "rgb(20,0,40)", "rgb(0,40,40)", "rgb(40,0,20)"];
+let index = 0;
+
 button.addEventListener("click", function () {
-    document.body.style.backgroundColor =
-        document.body.style.backgroundColor === "black"
-            ? "#aeff00"
-            : "black";
+    index = (index + 1) % colors.length;
+    document.body.style.backgroundColor = colors[index];
 });
+
 
 // 3. HOVER GLOW EFFECT (JS CONTROLLED)
 cards.forEach(card => {
