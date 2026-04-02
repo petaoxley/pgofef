@@ -1,29 +1,24 @@
-/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* BODY */
 body {
     background-color: black;
     color: white;
     font-family: Arial, sans-serif;
 }
 
-/* GLOBAL */
 html {
     scroll-behavior: smooth;
 }
 
-/* HEADER */
 header {
     text-align: center;
     padding: 20px;
 }
 
-/* NAV GRID */
 .nav-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -42,7 +37,6 @@ header {
     text-shadow: 0 0 10px rgb(0, 255, 180);
 }
 
-/* HERO */
 #hero {
     text-align: center;
     padding: 60px 20px;
@@ -62,7 +56,6 @@ button {
     cursor: pointer;
 }
 
-/* GRID SECTIONS (EVENTS + GALLERY) */
 .grid-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -70,7 +63,6 @@ button {
     padding: 40px;
 }
 
-/* CARDS */
 .card {
     background: #111;
     padding: 10px;
@@ -94,14 +86,12 @@ button {
     display: none;
 }
 
-/* GALLERY */
 #gallery img {
     width: 100%;
     height: 200px;
     object-fit: cover;
 }
 
-/* DJ LINEUP */
 #lineup {
     padding: 40px;
     text-align: center;
@@ -141,7 +131,6 @@ button {
     margin-top: 10px;
 }
 
-/* FESTIVAL INFO */
 #festival-info {
     padding: 80px 20px;
     display: flex;
@@ -185,49 +174,7 @@ button {
     color: #ddd;
 }
 
-/* FOOTER */
 footer {
     text-align: center;
     padding: 20px;
-}
-
-/* ========================= */
-/* RESPONSIVE (ALL IN ONE) */
-/* ========================= */
-
-@media (max-width: 768px) {
-
-    /* NAV */
-    .nav-grid {
-        grid-template-columns: 1fr;
-    }
-
-    /* GRID SECTIONS */
-    .grid-section {
-        grid-template-columns: 1fr;
-        padding: 20px;
-    }
-
-    /* LINEUP */
-    .lineup-grid {
-        grid-template-columns: 1fr;
-    }
-
-    /* FESTIVAL */
-    .festival {
-        padding: 20px;
-    }
-
-    .festival h2 {
-        font-size: 1.5rem;
-    }
-
-    /* HERO */
-    #hero h2 {
-        font-size: 1.8rem;
-    }
-
-    button {
-        width: 100%;
-    }
 }
