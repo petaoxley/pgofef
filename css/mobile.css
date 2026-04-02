@@ -1,0 +1,101 @@
+/* MOBILE STYLES */
+@media (max-width: 768px) {
+
+    /* GENERAL */
+    body {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    header {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    /* NAVIGATION */
+    .nav-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .nav-grid a {
+        padding: 12px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+
+    /* HERO */
+    #hero {
+        padding: 40px 15px;
+    }
+
+    #hero h2 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 12px;
+    }
+
+    /* EVENT CARDS */
+    .grid-section {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .card img {
+        height: 180px;
+    }
+
+    /* GALLERY */
+    #gallery {
+        grid-template-columns: 1fr;
+    }
+
+    #gallery img {
+        height: 180px;
+    }
+
+    /* DJ LINEUP */
+    .lineup-grid {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+    .dj img {
+        height: 180px;
+    }
+
+    /* FESTIVAL INFO */
+    #festival-info {
+        padding: 40px 15px;
+        gap: 50px;
+    }
+
+    .festival {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .festival h2 {
+        font-size: 1.4rem;
+    }
+
+    .festival p {
+        font-size: 0.95rem;
+    }
+
+    /* FOOTER */
+    footer {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+}
