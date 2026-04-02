@@ -12,6 +12,11 @@ body {
     font-family: Arial, sans-serif;
 }
 
+/* GLOBAL */
+html {
+    scroll-behavior: smooth;
+}
+
 /* HEADER */
 header {
     text-align: center;
@@ -37,55 +42,6 @@ header {
     text-shadow: 0 0 10px rgb(0, 255, 180);
 }
 
-/* LINEUP SECTION */
-#lineup {
-    padding: 40px;
-    text-align: center;
-}
-
-#lineup h2 {
-    color: rgb(0, 200, 255);
-    text-shadow: 0 0 15px rgb(0, 200, 255);
-    margin-bottom: 30px;
-}
-
-/* GRID */
-.lineup-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-/* DJ CARDS */
-.dj {
-    background: #111;
-    padding: 10px;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-.dj img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
-
-.dj:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgb(0, 255, 180);
-}
-
-.dj-info {
-    margin-top: 10px;
-}
-
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .lineup-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
 /* HERO */
 #hero {
     text-align: center;
@@ -106,7 +62,7 @@ button {
     cursor: pointer;
 }
 
-/* GRID SECTIONS */
+/* GRID SECTIONS (EVENTS + GALLERY) */
 .grid-section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -145,53 +101,47 @@ button {
     object-fit: cover;
 }
 
-/* FOOTER */
-footer {
+/* DJ LINEUP */
+#lineup {
+    padding: 40px;
     text-align: center;
-    padding: 20px;
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
-    .grid-section {
-        grid-template-columns: 1fr;
-    }
-
-    .nav-grid {
-        grid-template-columns: 1fr;
-    }
+#lineup h2 {
+    color: rgb(0, 200, 255);
+    text-shadow: 0 0 15px rgb(0, 200, 255);
+    margin-bottom: 30px;
 }
 
-/* FESTIVAL INFO SECTION */
-#festival-info {
-    padding: 60px 40px;
+.lineup-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 }
 
-/* INDIVIDUAL FESTIVAL BLOCKS */
-.festival {
-    margin-bottom: 60px;
-    max-width: 800px;
+.dj {
+    background: #111;
+    padding: 10px;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
-/* HEADINGS */
-.festival h2 {
-    color: rgb(255, 0, 150);
-    text-shadow: 0 0 15px rgb(255, 0, 150);
-    margin-bottom: 15px;
+.dj img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
-/* PARAGRAPHS */
-.festival p {
-    margin-bottom: 15px;
-    line-height: 1.6;
+.dj:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgb(0, 255, 180);
 }
 
-/* OPTIONAL SCROLL EFFECT */
-html {
-    scroll-behavior: smooth;
+.dj-info {
+    margin-top: 10px;
 }
 
-/* FESTIVAL INFO SECTION */
+/* FESTIVAL INFO */
 #festival-info {
     padding: 80px 20px;
     display: flex;
@@ -200,7 +150,6 @@ html {
     gap: 80px;
 }
 
-/* FESTIVAL BLOCK */
 .festival {
     max-width: 800px;
     text-align: center;
@@ -211,20 +160,17 @@ html {
     transition: 0.3s;
 }
 
-/* HOVER GLOW */
 .festival:hover {
     box-shadow: 0 0 25px rgba(0, 255, 180, 0.2);
     transform: scale(1.01);
 }
 
-/* HEADINGS */
 .festival h2 {
     font-size: 2rem;
     color: rgb(255, 0, 150);
     text-shadow: 0 0 15px rgb(255, 0, 150);
 }
 
-/* NEON DIVIDER */
 .festival-line {
     width: 60px;
     height: 3px;
@@ -233,20 +179,55 @@ html {
     box-shadow: 0 0 10px rgb(0, 255, 180);
 }
 
-/* TEXT */
 .festival p {
     margin-bottom: 15px;
     line-height: 1.7;
     color: #ddd;
 }
 
-/* RESPONSIVE */
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+/* ========================= */
+/* RESPONSIVE (ALL IN ONE) */
+/* ========================= */
+
 @media (max-width: 768px) {
+
+    /* NAV */
+    .nav-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* GRID SECTIONS */
+    .grid-section {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    /* LINEUP */
+    .lineup-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* FESTIVAL */
     .festival {
         padding: 20px;
     }
 
     .festival h2 {
         font-size: 1.5rem;
+    }
+
+    /* HERO */
+    #hero h2 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        width: 100%;
     }
 }
