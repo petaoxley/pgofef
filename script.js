@@ -1,4 +1,4 @@
-// 1. CLICK TO EXPAND EVENT INFO
+//creates card that when clicked have a drop down section of info- used ai to find out how to do this!
 let cards = document.querySelectorAll(".card");
 
 cards.forEach(card => {
@@ -8,7 +8,7 @@ cards.forEach(card => {
     });
 });
 
-// 2. BACKGROUND COLOR TOGGLE
+//button to change the colour of the background
 let button = document.getElementById("colorToggle");
 
 let colors = ["black", "rgb(20,0,40)", "rgb(0,40,40)", "rgb(40,0,20)"];
@@ -20,7 +20,7 @@ button.addEventListener("click", function () {
 });
 
 
-// 3. HOVER GLOW EFFECT (JS CONTROLLED)
+// hover effect on the cards- neon glow
 cards.forEach(card => {
     card.addEventListener("mouseover", function () {
         this.style.boxShadow = "0 0 30px rgb(255, 0, 150)";
@@ -31,7 +31,7 @@ cards.forEach(card => {
     });
 });
 
-// DJ LINEUP CLICK REVEAL
+//click reveal same as the ones for the cards above 
 let djs = document.querySelectorAll(".dj");
 
 djs.forEach(dj => {
