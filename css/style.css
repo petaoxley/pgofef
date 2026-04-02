@@ -190,3 +190,63 @@ footer {
 html {
     scroll-behavior: smooth;
 }
+
+/* FESTIVAL INFO SECTION */
+#festival-info {
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+}
+
+/* FESTIVAL BLOCK */
+.festival {
+    max-width: 800px;
+    text-align: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+/* HOVER GLOW */
+.festival:hover {
+    box-shadow: 0 0 25px rgba(0, 255, 180, 0.2);
+    transform: scale(1.01);
+}
+
+/* HEADINGS */
+.festival h2 {
+    font-size: 2rem;
+    color: rgb(255, 0, 150);
+    text-shadow: 0 0 15px rgb(255, 0, 150);
+}
+
+/* NEON DIVIDER */
+.festival-line {
+    width: 60px;
+    height: 3px;
+    background: rgb(0, 255, 180);
+    margin: 15px auto 25px auto;
+    box-shadow: 0 0 10px rgb(0, 255, 180);
+}
+
+/* TEXT */
+.festival p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    color: #ddd;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .festival {
+        padding: 20px;
+    }
+
+    .festival h2 {
+        font-size: 1.5rem;
+    }
+}
