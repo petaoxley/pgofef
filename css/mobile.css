@@ -1,100 +1,74 @@
 /* MOBILE STYLES */
 @media (max-width: 768px) {
-
-    /* GENERAL */
-    body {
+ body {
         font-size: 16px;
         line-height: 1.6;
     }
-
-    header {
+header {
         padding: 15px;
-    }
-
-    h1 {
+     }
+h1 {
         font-size: 1.8rem;
     }
-
-    h2 {
+h2 {
         font-size: 1.5rem;
     }
-
-    /* NAVIGATION */
-    .nav-grid {
+.nav-grid {
         grid-template-columns: 1fr;
         gap: 10px;
     }
-
-    .nav-grid a {
+.nav-grid a {
         padding: 12px;
         border-bottom: 1px solid rgba(255,255,255,0.1);
     }
-
-    /* HERO */
-    #hero {
+#hero {
         padding: 40px 15px;
     }
-
-    #hero h2 {
+#hero h2 {
         font-size: 1.8rem;
     }
-
-    button {
+button {
         width: 100%;
         padding: 12px;
     }
-
-    /* EVENT CARDS */
-    .grid-section {
+.grid-section {
         grid-template-columns: 1fr;
         padding: 20px;
         gap: 20px;
     }
-
-    .card img {
+.card img {
         height: 180px;
     }
-
-    /* GALLERY */
-    #gallery {
+#gallery {
         grid-template-columns: 1fr;
     }
-
-    #gallery img {
+#gallery img {
         height: 180px;
     }
-
-    /* DJ LINEUP */
-    .lineup-grid {
+.lineup-grid {
         grid-template-columns: 1fr;
         padding: 0 10px;
     }
-
-    .dj img {
+.dj img {
         height: 180px;
     }
-
-    /* FESTIVAL INFO */
-    #festival-info {
+#festival-info {
         padding: 40px 15px;
         gap: 50px;
     }
-
-    .festival {
+.festival {
         max-width: 100%;
         padding: 20px;
     }
 
-    .festival h2 {
+.festival h2 {
         font-size: 1.4rem;
     }
 
-    .festival p {
+.festival p {
         font-size: 0.95rem;
     }
-
-    /* FOOTER */
-    footer {
+footer {
         padding: 15px;
         font-size: 0.9rem;
     }
