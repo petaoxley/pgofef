@@ -161,3 +161,32 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* FESTIVAL INFO SECTION */
+#festival-info {
+    padding: 60px 40px;
+}
+
+/* INDIVIDUAL FESTIVAL BLOCKS */
+.festival {
+    margin-bottom: 60px;
+    max-width: 800px;
+}
+
+/* HEADINGS */
+.festival h2 {
+    color: rgb(255, 0, 150);
+    text-shadow: 0 0 15px rgb(255, 0, 150);
+    margin-bottom: 15px;
+}
+
+/* PARAGRAPHS */
+.festival p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* OPTIONAL SCROLL EFFECT */
+html {
+    scroll-behavior: smooth;
+}
