@@ -21,10 +21,10 @@ const qa=[
             answer: "Cheetah"
         }
 ];
-let currentQuestion= 0;
+let currentQuestion= nextQuestion();
 let score= 0;
 console.log(qa[0].question);
-document.getElementById("question").innerHTML= qa[0].question;
+document.getElementById("question").innerHTML= currentQuestion.question;
 
 let submitButton= document.getElementById("submit");
 let result= document.getElementById("result");
@@ -33,13 +33,13 @@ submitButton.addEventListener("click",function(){
      if (checkAnswer () == true){
         console.log("correct");
         increaseScore();
-        nextQuestion();
+        currentQuestion = nextQuestion();
         updateQuestion();
      }
      else{
         console.log("incorrect");
         decreaseScore();
-        nextQuestion();
+        currentQuestion = nextQuestion();
         updateQuestion();
      }
 
@@ -48,7 +48,7 @@ submitButton.addEventListener("click",function(){
 function checkAnswer(){
     const selected = document.querySelector('input[name="option"]:checked');
      console.log(selected.value);
-     if (selected.value == qa[currentQuestion].answer){
+     if (selected.value == currentQuestion.answer){
         return true;
      }
     else{
@@ -58,14 +58,16 @@ function checkAnswer(){
 }
 
 function nextQuestion(){
-    currentQuestion++;
-    if(currentQuestion ==qa.length){
-        currentQuestion = 0;
+    if (qa.length > 0){
+        return qa.pop();
+    }
+    else {
+        return null;
     }
 }
 
 function updateQuestion(){
-    document.getElementById("question").innerHTML= qa[currentQuestion].question;
+    document.getElementById("question").innerHTML= currentQuestion.question;
 }
 
 function increaseScore(){
