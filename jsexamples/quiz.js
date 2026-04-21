@@ -22,6 +22,7 @@ const qa=[
         }
 ];
 let currentQuestion= 0;
+let score= 0;
 console.log(qa[0].question);
 document.getElementById("question").innerHTML= qa[0].question;
 
@@ -33,13 +34,15 @@ submitButton.addEventListener("click",function(){
      console.log(selected.value);
      if (selected.value == qa[currentQuestion].answer){
         console.log("correct");
-        result.innerHTML= "Correct";
+        increaseScore();
         nextQuestion();
         updateQuestion();
      }
      else{
         console.log("incorrect");
-        result.innerHTML= "Incorrect";
+        decreaseScore();
+        nextQuestion();
+        updateQuestion();
      }
 
 });
@@ -53,4 +56,16 @@ function nextQuestion(){
 
 function updateQuestion(){
     document.getElementById("question").innerHTML= qa[currentQuestion].question;
+}
+
+function increaseScore(){
+    score++;
+    result.innerHTML= "Correct Score: " + score;
+
+}
+
+function decreaseScore(){
+    score--;
+    result.innerHTML= "Incorrect Score: " + score;
+
 }
