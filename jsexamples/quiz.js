@@ -34,6 +34,8 @@ submitButton.addEventListener("click",function(){
      if (selected.value == qa[currentQuestion].answer){
         console.log("correct");
         result.innerHTML= "Correct";
+        nextQuestion();
+        updateQuestion();
      }
      else{
         console.log("incorrect");
