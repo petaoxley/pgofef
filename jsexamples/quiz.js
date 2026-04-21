@@ -1,64 +1,71 @@
 "use strict";
-const qa=[
-           {
-            question: "What is the largest land animal?",
-            answer: "Elephant"
-        },
-        {
-            question: "Which animal is known as the king of the jungle?",
-            answer: "Lion"
-        },
-        {
-            question: "What mammal can fly?",
-            answer: "Bat"
-        },
-        {
-            question: "Which animal is famous for its black and white stripes?",
-            answer: "Zebra"
-        },
-        {
-            question: "What is the fastest land animal?",
-            answer: "Cheetah"
-        }
+const qa = [
+    {
+        question: "What is the largest land animal?",
+        answer: "Elephant"
+    },
+    {
+        question: "Which animal is known as the king of the jungle?",
+        answer: "Lion"
+    },
+    {
+        question: "What mammal can fly?",
+        answer: "Bat"
+    },
+    {
+        question: "Which animal is famous for its black and white stripes?",
+        answer: "Zebra"
+    },
+    {
+        question: "What is the fastest land animal?",
+        answer: "Cheetah"
+    }
 ];
-let currentQuestion= nextQuestion();
-let score= 0;
+let currentQuestion = nextQuestion();
+let score = 0;
 console.log(qa[0].question);
-document.getElementById("question").innerHTML= currentQuestion.question;
+document.getElementById("question").innerHTML = currentQuestion.question;
 
-let submitButton= document.getElementById("submit");
-let result= document.getElementById("result");
+let submitButton = document.getElementById("submit");
+let result = document.getElementById("result");
 
-submitButton.addEventListener("click",function(){
-     if (checkAnswer () == true){
-        console.log("correct");
-        increaseScore();
-        currentQuestion = nextQuestion();
-        updateQuestion();
-     }
-     else{
-        console.log("incorrect");
-        decreaseScore();
-        currentQuestion = nextQuestion();
-        updateQuestion();
-     }
+submitButton.addEventListener("click", function () {
+
+    if (currentQuestion != null) {
+        if (checkAnswer() == true) {
+            console.log("correct");
+            increaseScore();
+            currentQuestion = nextQuestion();
+            updateQuestion();
+        }
+        else {
+            console.log("incorrect");
+            decreaseScore();
+            currentQuestion = nextQuestion();
+            updateQuestion();
+        }
+
+    }
+    else{
+        document.getElementById("question").innerHTML= "Game Over";
+    }
 
 });
 
-function checkAnswer(){
+function checkAnswer() {
     const selected = document.querySelector('input[name="option"]:checked');
-     console.log(selected.value);
-     if (selected.value == currentQuestion.answer){
+    console.log(selected.value);
+    if (selected.value == currentQuestion.answer) {
         return true;
-     }
-    else{
+    }
+    else {
         return false;
     }
 
 }
 
-function nextQuestion(){
-    if (qa.length > 0){
+function nextQuestion() {
+    if (qa.length > 0) {
         return qa.pop();
     }
     else {
@@ -66,24 +73,27 @@ function nextQuestion(){
     }
 }
 
-function updateQuestion(){
-    document.getElementById("question").innerHTML= currentQuestion.question;
+function updateQuestion() {
+    if (currentQuestion != null){
+        document.getElementById("question").innerHTML = currentQuestion.question;
+
+    }
 }
 
-function increaseScore(){
+function increaseScore() {
     score++;
-    result.innerHTML= "Correct Score: " + score;
+    result.innerHTML = "Correct Score: " + score;
     setTimeout(clearResult(), 3000);
 
 }
 
-function decreaseScore(){
+function decreaseScore() {
     score--;
-    result.innerHTML= "Incorrect Score: " + score;
+    result.innerHTML = "Incorrect Score: " + score;
     setTimeout(clearResult(), 3000);
 
 }
 
-function clearResult(){
-    document.getElementById("result").innerHTML= " ";
+function clearResult() {
+    document.getElementById("result").innerHTML = " ";
 }
