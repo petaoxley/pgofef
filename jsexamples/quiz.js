@@ -30,9 +30,7 @@ let submitButton= document.getElementById("submit");
 let result= document.getElementById("result");
 
 submitButton.addEventListener("click",function(){
-    const selected = document.querySelector('input[name="option"]:checked');
-     console.log(selected.value);
-     if (selected.value == qa[currentQuestion].answer){
+     if (checkAnswer () == true){
         console.log("correct");
         increaseScore();
         nextQuestion();
@@ -46,6 +44,18 @@ submitButton.addEventListener("click",function(){
      }
 
 });
+
+function checkAnswer(){
+    const selected = document.querySelector('input[name="option"]:checked');
+     console.log(selected.value);
+     if (selected.value == qa[currentQuestion].answer){
+        return true;
+     }
+    else{
+        return false;
+    }
+
+}
 
 function nextQuestion(){
     currentQuestion++;
@@ -61,11 +71,17 @@ function updateQuestion(){
 function increaseScore(){
     score++;
     result.innerHTML= "Correct Score: " + score;
+    setTimeout(clearResult(), 3000);
 
 }
 
 function decreaseScore(){
     score--;
     result.innerHTML= "Incorrect Score: " + score;
+    setTimeout(clearResult(), 3000);
 
+}
+
+function clearResult(){
+    document.getElementById("result").innerHTML= " ";
 }
